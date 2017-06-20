@@ -31,8 +31,7 @@ void Interpreter::execute(std::string line)
 	if(tokens[0] == "hello") {
 		if(this->name=="")
 			cout<<"hello, world"<<endl;
-		else
-			cout<<"hello, "<<this->name<<endl;
+		
 	}
 
 	if(tokens[0] == "bye") {
@@ -40,8 +39,7 @@ void Interpreter::execute(std::string line)
 
 		if(this->name=="")
 			cout<<"bye, world"<<endl;
-		else
-			cout<<"bye, "<<this->name<<endl;
+		
 	}
 }
 
