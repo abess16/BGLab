@@ -17,7 +17,7 @@ void Interpreter::execute(std::string line)
 			back_inserter(tokens));
 
 	cout<<"Command: "<<tokens[0]<<endl;
-	cout<<"Parameter(s): ";
+  
 
 	for(int i=1; i<tokens.size(); i++) {
 		cout<<tokens[i]<<" ";
@@ -31,7 +31,8 @@ void Interpreter::execute(std::string line)
 	if(tokens[0] == "hello") {
 		if(this->name=="")
 			cout<<"hello, world"<<endl;
-		
+		else
+			cout<<"hello, "<<this->name<<endl;
 	}
 
 	if(tokens[0] == "bye") {
@@ -39,7 +40,8 @@ void Interpreter::execute(std::string line)
 
 		if(this->name=="")
 			cout<<"bye, world"<<endl;
-		
+		else
+			cout<<"bye, "<<this->name<<endl;
 	}
 }
 
